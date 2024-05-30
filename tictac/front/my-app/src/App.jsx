@@ -14,7 +14,7 @@ const App = () => {
     const checkAuth = async () => {
       if (token) {
         try {
-          const res = await axios.get('http://localhost:5000/api/game/status', {
+          const res = await axios.get('https://tictactoe-game-3.onrender.com/api/game/status', {
             headers: { Authorization: token },
           });
           if (res.status !== 200) {
