@@ -11,7 +11,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect('mongodb://127.0.0.1:27017/tictactoe')
+mongoose.connect('mongodb+srv://sanofer:guvi1234@cluster0.htinaip.mongodb.net/')
 .then(() => {
   console.log('Connected to MongoDB');
 }).catch((err) => {
