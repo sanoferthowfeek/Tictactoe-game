@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Square from './Square.jsx';
 import './Board.css';
+import './Tic.css';
 
 const Board = () => {
   const [squares, setSquares] = useState(Array(9).fill(null));
@@ -23,7 +24,7 @@ const Board = () => {
   const status = winner ? `Winner: ${winner}` : `Next player: ${xIsNext ? 'X' : 'O'}`;
 
   return (
-    <div>
+    <div className='tic'>
       <h1>TIC TAC TOE GAME</h1>
       <div className="status">{status}</div>
       <div className="board-row">
@@ -41,6 +42,7 @@ const Board = () => {
         {renderSquare(7)}
         {renderSquare(8)}
       </div>
+      <button className='game11' onClick={() => window.location.reload()}>Play Again</button>
     </div>
   );
 };

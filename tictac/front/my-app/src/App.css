@@ -1,23 +1,23 @@
 /* src/App.css */
-.app {
+/* .app {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-}
+} */
 
-header {
+/* header {
   position: absolute;
   top: 10px;
   right: 10px;
-}
+} */
 
-main {
+/* main {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */
 
 .sign-in, .register {
   display: flex;
@@ -29,4 +29,63 @@ button {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+ 
+            border: none; 
+            color: black; 
+            padding: 15px 32px;
+            text-align: center; 
+            text-decoration: none;
+            display: inline-block; 
+            font-size: 16px; 
+            margin: 4px 2px; 
+            cursor: pointer; 
+            border-radius: 12px; 
+            
+           
+            
+    
 }
+
+.button:hover {
+  background-color: #007B9E; 
+}
+
+.button:active {
+  background-color: #005F73; 
+}
+
+.input1{
+  display: grid;
+          gap: 10px;
+          width: 25%;
+          
+          padding: 20px;
+          text-align: center;
+margin-left: 450px;       
+}
+
+.game2{
+  border: none; 
+          color: black; 
+          padding: 15px 32px; 
+          text-align: center; 
+          text-decoration: none; 
+          display: inline-block; 
+          font-size: 16px; 
+          margin: 4px 2px; 
+          cursor: pointer; 
+          border-radius: 12px; 
+          background-color: rgb(96, 102, 188);
+}
+
+.game2:hover{
+  background-color: rgb(169, 216, 59);
+  color:white;
+}
+
+/* footer{
+  position:absolute;
+  top: 30px;
+  right: 10px;
+
+} */

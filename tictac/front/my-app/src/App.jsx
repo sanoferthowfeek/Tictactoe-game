@@ -30,12 +30,16 @@ const App = () => {
 
   return (
     <div className="app">
-      <header>
-        {token ? <SignOut setToken={setToken} /> : <SignIn setToken={setToken} />}
-      </header>
+      
       <main>
+
         {token ? <Board /> : <Register />}
+        
+
       </main>
+      <footer>
+      {token ? <SignOut setToken={setToken} /> : <SignIn setToken={setToken} />}
+      </footer>
     </div>
   );
 };
